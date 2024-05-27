@@ -2,7 +2,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Getting Started
 
-#How to install the ReactNative Project
+#3 How to install the ReactNative Project
 
 To create a new React Native project, you'll need to have Node.js and npm (Node Package Manager) installed on your system. Once you have those, you can use the React Native CLI to generate a new project. Here's how you can do it:
 
