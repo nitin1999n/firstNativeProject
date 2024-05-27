@@ -6,34 +6,34 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 To create a new React Native project, you'll need to have Node.js and npm (Node Package Manager) installed on your system. Once you have those, you can use the React Native CLI to generate a new project. Here's how you can do it:
 
->First, make sure you have Node.js installed. You can download and install it from the official website: Node.js Downloads
+1. First, make sure you have Node.js installed. You can download and install it from the official website: Node.js Downloads
 
->Once Node.js is installed, open your terminal or command prompt.
+2. Once Node.js is installed, open your terminal or command prompt.
 
->Install the React Native CLI globally by running the following command:
+3. Install the React Native CLI globally by running the following command:
 
 ```bash
 npm install -g react-native-cli
 ```
 
-Now, you can create a new React Native project by running:
+4. Now, you can create a new React Native project by running:
 
 ```bash
 react-native init YourProjectName
 ```
-Replace "YourProjectName" with the desired name for your project.
+5. Replace "YourProjectName" with the desired name for your project.
 
->Navigate into your newly created project directory:
+6. Navigate into your newly created project directory:
 ```bash
 cd YourProjectName
 ```
->Finally, start the Metro bundler and run your project on either an Android or iOS device or emulator:
+7. Finally, start the Metro bundler and run your project on either an Android or iOS device or emulator:
 
->1. For iOS:
+   7.1. For iOS:
 ```bash
 npx react-native run-ios
 ```
->2. For Android:
+   7.2. For Android:
 ```bash
 npx react-native run-android
 ```
