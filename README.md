@@ -2,6 +2,45 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Getting Started
 
+#How to install the ReactNative Project
+
+To create a new React Native project, you'll need to have Node.js and npm (Node Package Manager) installed on your system. Once you have those, you can use the React Native CLI to generate a new project. Here's how you can do it:
+
+>First, make sure you have Node.js installed. You can download and install it from the official website: Node.js Downloads
+
+>Once Node.js is installed, open your terminal or command prompt.
+
+>Install the React Native CLI globally by running the following command:
+
+```bash
+npm install -g react-native-cli
+```
+
+Now, you can create a new React Native project by running:
+
+```bash
+react-native init YourProjectName
+```
+Replace "YourProjectName" with the desired name for your project.
+
+>Navigate into your newly created project directory:
+```bash
+cd YourProjectName
+```
+>Finally, start the Metro bundler and run your project on either an Android or iOS device or emulator:
+
+>1. For iOS:
+```bash
+npx react-native run-ios
+```
+>2. For Android:
+```bash
+npx react-native run-android
+```
+This will start the development server and build your React Native app, launching it on the selected platform.
+
+Once the app has built successfully, you should see it running on your emulator or device. You can then open the project in your preferred code editor and start developing your React Native application!
+
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
