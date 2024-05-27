@@ -77,3 +77,91 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+## If Error occure 
+FAILURE: Build failed with an exception.
+# Where:
+Settings file 'D:\Native Project\android\Styling\secondProject\android\settings.gradle' line: 2
+
+# What went wrong:
+A problem occurred evaluating settings 'secondProject'.
+> Could not read script 'D:\Native Project\android\Styling\secondProject\node_modules\@react-native-community\cli-platform-android\native_modules.gradle' as it does not exist.
+
+# Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED
+Then try this
+
+The error message indicates that the build process is failing because it cannot find the `native_modules.gradle` file in the specified path. This issue often arises due to an incomplete or corrupted installation of the project dependencies.
+
+Step-by-Step Solution
+1.Ensure Correct Project Setup:
+   Make sure you have followed all the steps in setting up your development environment as outlined in the React Native documentation.
+
+2.Clean the Project:
+   Sometimes, residual files can cause issues. Clean the project by running the following commands in the project directory:
+
+```sh
+   cd android
+   ./gradlew clean
+   cd ..
+```
+3.Reinstall Node Modules:
+   Delete the `node_modules` folder and reinstall the dependencies.
+   
+   ```sh
+   rm -rf node_modules
+   npm install
+   ```
+   Alternatively, if you're using Yarn:
+   ```sh
+   yarn install
+   ```
+4. Ensure All Dependencies are Installed Correctly:
+   Sometimes dependencies might not install properly. Run:
+   ```sh
+   npm install @react-native-community/cli-platform-android
+   ```
+   or if using Yarn:
+   ```sh
+   yarn add @react-native-community/cli-platform-android
+   ```
+5. Update React Native CLI:
+   Ensure you're using the latest version of React Native CLI.
+   ```sh
+   npm install -g react-native-cli
+   ```
+6. Run React Native Doctor:
+   This command helps identify common issues in your environment.
+   ```sh
+   npx react-native doctor
+   ```
+   Follow the recommendations provided by the doctor command.
+7. Check `settings.gradle` File:
+   Open `android/settings.gradle` and ensure it includes the correct path to `native_modules.gradle`. It should look something like this:
+   ```sh
+   rootProject.name = 'secondProject'
+   apply from: file("$rootDir/../node_modules/@react-native-community/cli-platform-android/native_modules.gradle") // This should match your file structure
+   ```
+8. Check for Gradle Wrapper:
+   Ensure you have the correct Gradle version. In the `android/gradle/wrapper/gradle-wrapper.properties` file, verify the distribution URL:
+   ```properties
+   distributionUrl=https\://services.gradle.org/distributions/gradle-6.9-all.zip
+   ```
+9. Run the Build Command Again:
+   After following the steps above, try running the project again.
+   ```sh
+   npx react-native run-android
+   ```
+#Additional Tips:
+   >Verbose Logging: If the problem persists, run the build command with verbose logging to get more detailed output:
+   ```sh
+   npx react-native run-android --verbose
+   ```
+   >Check for Platform-Specific Issues: Ensure your Android SDK and emulator are properly configured and that your environment variables are correctly set.
+
+If you follow these steps and ensure everything is correctly set up, your project should build successfully. If you continue to face issues, providing more detailed logs can help in diagnosing the problem further.
