@@ -80,14 +80,14 @@ To learn more about React Native, take a look at the following resources:
 
 ## If Error occure 
 FAILURE: Build failed with an exception.
-# Where:
+Where:
 Settings file 'D:\Native Project\android\Styling\secondProject\android\settings.gradle' line: 2
 
-# What went wrong:
+What went wrong:
 A problem occurred evaluating settings 'secondProject'.
 > Could not read script 'D:\Native Project\android\Styling\secondProject\node_modules\@react-native-community\cli-platform-android\native_modules.gradle' as it does not exist.
 
-# Try:
+Try:
 > Run with --stacktrace option to get the stack trace.
 > Run with --info or --debug option to get more log output.
 > Run with --scan to get full insights.
