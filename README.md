@@ -33,6 +33,7 @@ cd YourProjectName
 ```bash
 npx react-native run-ios
 ```
+
    7.2. For Android:
 ```bash
 npx react-native run-android
