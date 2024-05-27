@@ -78,7 +78,7 @@ To learn more about React Native, take a look at the following resources:
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
 
-## If Error occure 
+# If Error occure 
 FAILURE: Build failed with an exception.
 Where:
 Settings file 'D:\Native Project\android\Styling\secondProject\android\settings.gradle' line: 2
