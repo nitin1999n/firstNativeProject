@@ -99,10 +99,10 @@ Then try this
 The error message indicates that the build process is failing because it cannot find the `native_modules.gradle` file in the specified path. This issue often arises due to an incomplete or corrupted installation of the project dependencies.
 
 Step-by-Step Solution
-1.Ensure Correct Project Setup:
+1. Ensure Correct Project Setup:
    Make sure you have followed all the steps in setting up your development environment as outlined in the React Native documentation.
 
-2.Clean the Project:
+2. Clean the Project:
    Sometimes, residual files can cause issues. Clean the project by running the following commands in the project directory:
 
 ```sh
@@ -110,7 +110,7 @@ Step-by-Step Solution
    ./gradlew clean
    cd ..
 ```
-3.Reinstall Node Modules:
+3. Reinstall Node Modules:
    Delete the `node_modules` folder and reinstall the dependencies.
    
    ```sh
