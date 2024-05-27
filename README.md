@@ -79,7 +79,7 @@ To learn more about React Native, take a look at the following resources:
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
 
 # If Error occure 
-FAILURE: Build failed with an exception.
+"(FAILURE: Build failed with an exception.
 Where:
 Settings file 'D:\Native Project\android\Styling\secondProject\android\settings.gradle' line: 2
 
@@ -93,7 +93,8 @@ Try:
 > Run with --scan to get full insights.
 > Get more help at https://help.gradle.org.
 
-BUILD FAILED
+BUILD FAILED)"
+
 Then try this
 
 The error message indicates that the build process is failing because it cannot find the `native_modules.gradle` file in the specified path. This issue often arises due to an incomplete or corrupted installation of the project dependencies.
